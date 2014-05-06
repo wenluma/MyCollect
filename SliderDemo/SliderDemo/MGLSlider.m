@@ -35,6 +35,16 @@
     }
     return self;
 }
+- (id)initWithCoder:(NSCoder *)aDecoder{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        _width = CGRectGetWidth(self.bounds)-Raduis*2;
+        _centerY = CGRectGetHeight(self.bounds)/2.0;
+        [self initStatus];
+        _unitLength = _width*_stepValue/(_maximumValue - _minimumValue);
+    }
+    return self;
+}
 - (void)setMinimumValue:(float)minimumValue{
     _minimumValue = minimumValue;
     _startValue.text = [NSString stringWithFormat:@"%.f",_minimumValue];
