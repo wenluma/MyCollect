@@ -47,7 +47,8 @@
 }
 - (void)setMinimumValue:(float)minimumValue{
     _minimumValue = minimumValue;
-    _startValue.text = [NSString stringWithFormat:@"%.f",_minimumValue];
+    _startValue.text = [NSString stringWithFormat:@"%.0f",_minimumValue];
+    [_startValue sizeToFit];
 }
 - (void)setMaximumValue:(float)maximumValue{
     _maximumValue = maximumValue;
@@ -73,14 +74,14 @@
     [self showCurrentValue];
 }
 - (CGPoint)thumbCenter{
-    float x = _value*_width/(_maximumValue - _minimumValue)+Raduis;
+    float x = (_value-_minimumValue)*_width/(_maximumValue - _minimumValue)+Raduis;
     return CGPointMake(x, _centerY);
 }
 
 - (void)nearestPoint:(CGPoint)point{
     float value = point.x/_unitLength;
     float intValue = floorf(value);
-    _value = intValue*_stepValue;
+    _value = intValue*_stepValue+_minimumValue;
     if (_value>_maximumValue) {
         _value = _maximumValue;
     }else if (_value<_minimumValue){
@@ -100,12 +101,12 @@
     _stepValue = 100;
     _stepped = YES;
     
-    _startColor = [UIColor redColor];
-    _endColor = [UIColor grayColor];
+    _startColor = UIColorFromRGB(0x73ba5d);
+    _endColor = UIColorFromRGB(0x9a9da3);
     _startLineWidth = 2;
     _endLineWidth = 1;
     
-    _thumbColor = [UIColor redColor];
+    _thumbColor = UIColorFromRGB(0x73ba5d);
     
     UIImageView *endImageV = [[UIImageView alloc] initWithFrame:CGRectMake(Raduis, 0, _width, _endLineWidth)];
     endImageV.backgroundColor = _endColor;
@@ -124,7 +125,7 @@
     
     CAShapeLayer *shapeLayer = [[CAShapeLayer alloc] init];
     shapeLayer.frame = CGRectMake(0, 0, Raduis, Raduis);
-    shapeLayer.backgroundColor = [[UIColor greenColor] CGColor];
+    shapeLayer.backgroundColor = [UIColorFromRGB(0x73ba5d) CGColor];
     ;
     shapeLayer.cornerRadius = Raduis/2;
     shapeLayer.position = imgv.center;
@@ -136,7 +137,7 @@
     
     [self updateTrackHighlight];
     
-    UILabel *startValue = [[UILabel alloc] initWithFrame:CGRectMake(Raduis, 0, 10, 10)];
+    UILabel *startValue = [[UILabel alloc] initWithFrame:CGRectMake(Raduis, 0, 100, 10)];
     [self addSubview:startValue];
     _startValue = startValue;
     _startValue.text = [NSString stringWithFormat:@"%.0f",_minimumValue];
