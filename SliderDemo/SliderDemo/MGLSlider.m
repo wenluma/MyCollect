@@ -55,6 +55,11 @@
 }
 - (void)setValue:(float)value{
     _value = value;
+    if (_value>_maximumValue) {
+        _value = _maximumValue;
+    }else if (_value<_minimumValue){
+        _value = _minimumValue;
+    }
     _thumbImageV.center = [self thumbCenter];
     [self updateTrackHighlight];
 }
@@ -76,9 +81,9 @@
     float value = point.x/_unitLength;
     float intValue = floorf(value);
     _value = intValue*_stepValue;
-    if (_value>_maximumValue+1) {
+    if (_value>_maximumValue) {
         _value = _maximumValue;
-    }else if (_value<_minimumValue -1){
+    }else if (_value<_minimumValue){
         _value = _minimumValue;
     }else{
         _thumbImageV.center = [self thumbCenter];
@@ -100,7 +105,7 @@
     _startLineWidth = 2;
     _endLineWidth = 1;
     
-    _thumbColor = [UIColor greenColor];
+    _thumbColor = [UIColor redColor];
     
     UIImageView *endImageV = [[UIImageView alloc] initWithFrame:CGRectMake(Raduis, 0, _width, _endLineWidth)];
     endImageV.backgroundColor = _endColor;
@@ -119,7 +124,7 @@
     
     CAShapeLayer *shapeLayer = [[CAShapeLayer alloc] init];
     shapeLayer.frame = CGRectMake(0, 0, Raduis, Raduis);
-    shapeLayer.backgroundColor = [[UIColor purpleColor] CGColor];
+    shapeLayer.backgroundColor = [[UIColor greenColor] CGColor];
     ;
     shapeLayer.cornerRadius = Raduis/2;
     shapeLayer.position = imgv.center;

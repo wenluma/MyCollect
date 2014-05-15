@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E2405B3191A67FF001EED9D /* MGLSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2405B2191A67FF001EED9D /* MGLSlider.m */; };
+		8E2405BA191A7529001EED9D /* MDRadialProgressLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2405B5191A7529001EED9D /* MDRadialProgressLabel.m */; };
+		8E2405BB191A7529001EED9D /* MDRadialProgressTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2405B7191A7529001EED9D /* MDRadialProgressTheme.m */; };
+		8E2405BC191A7529001EED9D /* MDRadialProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2405B9191A7529001EED9D /* MDRadialProgressView.m */; };
+		8E2405C4191A792F001EED9D /* MRCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2405C3191A792F001EED9D /* MRCircularProgressView.m */; };
+		8E2405C7191A844A001EED9D /* CircleProgressVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2405C6191A844A001EED9D /* CircleProgressVIew.m */; };
 		8E9C7A131918861E00D92C76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9C7A121918861E00D92C76 /* Foundation.framework */; };
 		8E9C7A151918861E00D92C76 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9C7A141918861E00D92C76 /* CoreGraphics.framework */; };
 		8E9C7A171918861E00D92C76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9C7A161918861E00D92C76 /* UIKit.framework */; };
@@ -21,7 +27,7 @@
 		8E9C7A341918861E00D92C76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9C7A161918861E00D92C76 /* UIKit.framework */; };
 		8E9C7A3C1918861E00D92C76 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E9C7A3A1918861E00D92C76 /* InfoPlist.strings */; };
 		8E9C7A3E1918861E00D92C76 /* SliderDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9C7A3D1918861E00D92C76 /* SliderDemoTests.m */; };
-		8E9C7A491918864B00D92C76 /* MGLSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9C7A481918864B00D92C76 /* MGLSlider.m */; };
+		8EDC89D0192368FB000431CE /* UIAlertViewCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC89CF192368FB000431CE /* UIAlertViewCustom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E2405B1191A67FF001EED9D /* MGLSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGLSlider.h; sourceTree = "<group>"; };
+		8E2405B2191A67FF001EED9D /* MGLSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGLSlider.m; sourceTree = "<group>"; };
+		8E2405B4191A7529001EED9D /* MDRadialProgressLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDRadialProgressLabel.h; sourceTree = "<group>"; };
+		8E2405B5191A7529001EED9D /* MDRadialProgressLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDRadialProgressLabel.m; sourceTree = "<group>"; };
+		8E2405B6191A7529001EED9D /* MDRadialProgressTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDRadialProgressTheme.h; sourceTree = "<group>"; };
+		8E2405B7191A7529001EED9D /* MDRadialProgressTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDRadialProgressTheme.m; sourceTree = "<group>"; };
+		8E2405B8191A7529001EED9D /* MDRadialProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDRadialProgressView.h; sourceTree = "<group>"; };
+		8E2405B9191A7529001EED9D /* MDRadialProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDRadialProgressView.m; sourceTree = "<group>"; };
+		8E2405C1191A7918001EED9D /* MRStopableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRStopableView.h; sourceTree = "<group>"; };
+		8E2405C2191A792F001EED9D /* MRCircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCircularProgressView.h; sourceTree = "<group>"; };
+		8E2405C3191A792F001EED9D /* MRCircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCircularProgressView.m; sourceTree = "<group>"; };
+		8E2405C5191A844A001EED9D /* CircleProgressVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleProgressVIew.h; sourceTree = "<group>"; };
+		8E2405C6191A844A001EED9D /* CircleProgressVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleProgressVIew.m; sourceTree = "<group>"; };
 		8E9C7A0F1918861E00D92C76 /* SliderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SliderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9C7A121918861E00D92C76 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8E9C7A141918861E00D92C76 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,8 +73,8 @@
 		8E9C7A391918861E00D92C76 /* SliderDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SliderDemoTests-Info.plist"; sourceTree = "<group>"; };
 		8E9C7A3B1918861E00D92C76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8E9C7A3D1918861E00D92C76 /* SliderDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SliderDemoTests.m; sourceTree = "<group>"; };
-		8E9C7A471918864B00D92C76 /* MGLSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGLSlider.h; sourceTree = "<group>"; };
-		8E9C7A481918864B00D92C76 /* MGLSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGLSlider.m; sourceTree = "<group>"; };
+		8EDC89CE192368FB000431CE /* UIAlertViewCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAlertViewCustom.h; sourceTree = "<group>"; };
+		8EDC89CF192368FB000431CE /* UIAlertViewCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIAlertViewCustom.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +139,21 @@
 				8E9C7A241918861E00D92C76 /* Main.storyboard */,
 				8E9C7A271918861E00D92C76 /* ViewController.h */,
 				8E9C7A281918861E00D92C76 /* ViewController.m */,
-				8E9C7A471918864B00D92C76 /* MGLSlider.h */,
-				8E9C7A481918864B00D92C76 /* MGLSlider.m */,
+				8E2405B4191A7529001EED9D /* MDRadialProgressLabel.h */,
+				8E2405B5191A7529001EED9D /* MDRadialProgressLabel.m */,
+				8E2405B6191A7529001EED9D /* MDRadialProgressTheme.h */,
+				8E2405B7191A7529001EED9D /* MDRadialProgressTheme.m */,
+				8E2405B8191A7529001EED9D /* MDRadialProgressView.h */,
+				8E2405B9191A7529001EED9D /* MDRadialProgressView.m */,
+				8E2405C1191A7918001EED9D /* MRStopableView.h */,
+				8E2405C2191A792F001EED9D /* MRCircularProgressView.h */,
+				8E2405C3191A792F001EED9D /* MRCircularProgressView.m */,
+				8E2405C5191A844A001EED9D /* CircleProgressVIew.h */,
+				8E2405C6191A844A001EED9D /* CircleProgressVIew.m */,
+				8E2405B1191A67FF001EED9D /* MGLSlider.h */,
+				8E2405B2191A67FF001EED9D /* MGLSlider.m */,
+				8EDC89CE192368FB000431CE /* UIAlertViewCustom.h */,
+				8EDC89CF192368FB000431CE /* UIAlertViewCustom.m */,
 				8E9C7A2A1918861E00D92C76 /* Images.xcassets */,
 				8E9C7A191918861E00D92C76 /* Supporting Files */,
 			);
@@ -255,9 +287,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E9C7A291918861E00D92C76 /* ViewController.m in Sources */,
-				8E9C7A491918864B00D92C76 /* MGLSlider.m in Sources */,
+				8E2405B3191A67FF001EED9D /* MGLSlider.m in Sources */,
+				8EDC89D0192368FB000431CE /* UIAlertViewCustom.m in Sources */,
+				8E2405BA191A7529001EED9D /* MDRadialProgressLabel.m in Sources */,
 				8E9C7A231918861E00D92C76 /* AppDelegate.m in Sources */,
+				8E2405BC191A7529001EED9D /* MDRadialProgressView.m in Sources */,
+				8E2405C7191A844A001EED9D /* CircleProgressVIew.m in Sources */,
+				8E2405BB191A7529001EED9D /* MDRadialProgressTheme.m in Sources */,
 				8E9C7A1F1918861E00D92C76 /* main.m in Sources */,
+				8E2405C4191A792F001EED9D /* MRCircularProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +423,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SliderDemo/SliderDemo-Prefix.pch";
 				INFOPLIST_FILE = "SliderDemo/SliderDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -398,6 +437,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SliderDemo/SliderDemo-Prefix.pch";
 				INFOPLIST_FILE = "SliderDemo/SliderDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -462,6 +502,7 @@
 				8E9C7A431918861E00D92C76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E9C7A441918861E00D92C76 /* Build configuration list for PBXNativeTarget "SliderDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +511,7 @@
 				8E9C7A461918861E00D92C76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
