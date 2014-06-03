@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3EDE2A7D-2674-4EB8-8D64-0C794D5F085D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>EncryptionDecryption</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C00039EE-9BB2-4BC5-A626-86DDE4B2AA1E</key>
+		<string>https://github.com/wenluma/MyCollect.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>EncryptionDecryption/EncryptionDecryption.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C00039EE-9BB2-4BC5-A626-86DDE4B2AA1E</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/wenluma/MyCollect.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C00039EE-9BB2-4BC5-A626-86DDE4B2AA1E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C00039EE-9BB2-4BC5-A626-86DDE4B2AA1E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MyCollect</string>
+		</dict>
+	</array>
+</dict>
+</plist>
